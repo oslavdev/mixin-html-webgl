@@ -42,7 +42,6 @@ body
     position: absolute;
     top: 50%;
     left: 50%;
-    cursor: help;
 }
 
 .point .text
@@ -70,6 +69,7 @@ body
 .point.visible .label 
 {
     transform: scale(1,1);
+    pointer-events: initial;
 }
 
 .point .label
@@ -89,4 +89,5 @@ body
     cursor: help;
     transform: scale(0,0);
     transition: transform 0.3s;
+    pointer-events: none;
 }
